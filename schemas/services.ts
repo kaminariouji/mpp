@@ -11300,7 +11300,7 @@ export const services: ServiceDef[] = [
       },
       {
         route: "GET /token",
-        desc: "Risk verdict for any EVM token contract address: is this token safe to buy, or is it a honeypot, rug pull or scam? Combines a real buy/sell transaction simulation with holder, tax, mint and liquidity findings, and returns a 0-100 safety score.",
+        desc: "Risk verdict for any EVM token contract address: is this token safe to buy, or is it a honeypot, rug pull or scam? Combines a real buy/sell transaction simulation with holder, tax, mint and liquidity findings, and returns a verdict (low-risk, caution, high-risk, likely-scam, or unverified when no security source answered) plus a 0-100 score and a confidence field stating how much data the verdict rests on.",
         amount: "20000",
         unitType: "request",
       },
