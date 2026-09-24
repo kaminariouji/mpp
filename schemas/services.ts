@@ -11342,7 +11342,7 @@ export const services: ServiceDef[] = [
       },
       {
         route: "GET /datacenter-vpn-check",
-        desc: "Check if an IP address is a datacenter, hosting range or VPN rather than a residential connection, with the ASN, ISP and country behind the verdict.",
+        desc: "Classify the network behind an IP address: datacenter/hosting, consumer residential ISP, education or government. Returns the verdict with the ASN, organisation, ISP and country it was derived from, plus the confidence and a note that it is an inference from the ASN organisation name rather than a proxy/VPN registry lookup.",
         amount: "5000",
         unitType: "request",
       },
