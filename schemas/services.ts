@@ -11322,6 +11322,30 @@ export const services: ServiceDef[] = [
         amount: "5000",
         unitType: "request",
       },
+      {
+        route: "GET /ip",
+        desc: "Geolocate any IPv4 or IPv6 address: country, region, city, postal code, coordinates, continent, ASN, ISP, organisation and timezone. Omit the address to look up the caller.",
+        amount: "5000",
+        unitType: "request",
+      },
+      {
+        route: "GET /ip-geolocation-lookup",
+        desc: "IP geolocation lookup for an IPv4 or IPv6 address: country, city, region, coordinates, ASN and ISP.",
+        amount: "5000",
+        unitType: "request",
+      },
+      {
+        route: "GET /asn-lookup",
+        desc: "ASN lookup for an IP address: autonomous system number, ASN organisation, owning ISP and domain, plus the address country and city.",
+        amount: "5000",
+        unitType: "request",
+      },
+      {
+        route: "GET /datacenter-vpn-check",
+        desc: "Check if an IP address is a datacenter, hosting range or VPN rather than a residential connection, with the ASN, ISP and country behind the verdict.",
+        amount: "5000",
+        unitType: "request",
+      },
     ],
   },
 ];
